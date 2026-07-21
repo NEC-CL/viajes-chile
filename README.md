@@ -64,5 +64,5 @@ La página fue probada en resoluciones de escritorio y celular. Se comprobaron e
 
 ## Publicación
 
-- Repositorio: pendiente de publicación.
-- GitHub Pages: pendiente de publicación.
+- Repositorio: https://github.com/NEC-CL/viajes-chile
+- GitHub Pages: https://nec-cl.github.io/viajes-chile/
