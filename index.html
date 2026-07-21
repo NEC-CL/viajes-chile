@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre paisajes, experiencias y destinos inolvidables de Chile con Viajes Chile.">
+  <meta name="author" content="Nicolás Escudero Cabello">
+  <title>Viajes Chile | Descubre el fin del mundo</title>
+
+  <!-- Google Fonts: Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/20WPZL6RZADZkSkjtM3N4MZVhQ2FDfPd8vmPsmD+FgRlKZtXJ0rZlLf8Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <link rel="icon" type="image/svg+xml" href="assets/img/viajes.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="90" tabindex="0">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header id="inicio">
+    <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio" aria-label="Ir al inicio de Viajes Chile">
+          <img src="assets/img/viajes.svg" alt="Viajes Chile" width="150" height="44">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarMenu" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5500" aria-label="Destinos destacados de Chile">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mostrar paisaje del altiplano"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Mostrar paisaje de Isla de Pascua"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Mostrar paisaje de la Patagonia"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Llamas frente a montañas nevadas del altiplano chileno">
+          <div class="carousel-caption hero-caption">
+            <p class="hero-kicker">Naturaleza que transforma</p>
+            <h1>Viajes Chile</h1>
+            <p>Recorre un territorio de contrastes, desde el desierto hasta los glaciares australes.</p>
+            <a class="btn btn-info btn-lg" href="#destacados">Explorar destinos</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Moáis de Isla de Pascua bajo un cielo azul">
+          <div class="carousel-caption hero-caption">
+            <p class="hero-kicker">Historia viva</p>
+            <h2>Rapa Nui</h2>
+            <p>Conoce una cultura única en medio del océano Pacífico.</p>
+            <a class="btn btn-info btn-lg" href="#contacto">Planificar viaje</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Montañas, lago y bosque en la Patagonia chilena">
+          <div class="carousel-caption hero-caption">
+            <p class="hero-kicker">Aventura austral</p>
+            <h2>Patagonia</h2>
+            <p>Camina entre montañas, lagos y bosques en el extremo sur.</p>
+            <a class="btn btn-info btn-lg" href="#quienes-somos">Conocer la agencia</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Destino anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Destino siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <!-- Las secciones de contenido se incorporan en el siguiente hito. -->
+  </main>
+
+  <!-- jQuery 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Bundle 5.3.8: incluye Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
