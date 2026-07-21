@@ -97,8 +97,206 @@
   </header>
 
   <main id="contenido">
-    <!-- Las secciones de contenido se incorporan en el siguiente hito. -->
+    <section id="quienes-somos" class="about-section d-none d-md-block" aria-labelledby="titulo-quienes-somos">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Nuestra forma de viajar</p>
+          <h2 id="titulo-quienes-somos">Quiénes somos</h2>
+        </div>
+
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="about-item">
+              <div class="about-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Vuelos y conexiones planificadas">
+                <i class="fa-solid fa-plane" aria-hidden="true"></i>
+              </div>
+              <h3>Exploramos contigo</h3>
+              <p>Diseñamos rutas que conectan los paisajes más reconocidos de Chile con lugares menos transitados. Cada itinerario combina tiempos realistas, traslados claros y oportunidades para descubrir el territorio con calma.</p>
+            </div>
+          </article>
+
+          <article class="col-md-4">
+            <div class="about-item">
+              <div class="about-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Recorridos terrestres por todo Chile">
+                <i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>
+              </div>
+              <h3>Conocemos el territorio</h3>
+              <p>Trabajamos con experiencias que valoran la identidad local, el patrimonio y la naturaleza. Nuestra selección incluye desiertos, bosques, volcanes, islas y ciudades que muestran la diversidad del país.</p>
+            </div>
+          </article>
+
+          <article class="col-md-4">
+            <div class="about-item">
+              <div class="about-icon" data-bs-toggle="tooltip" data-bs-placement="top" title="Acompañamiento durante tu experiencia">
+                <i class="fa-solid fa-route" aria-hidden="true"></i>
+              </div>
+              <h3>Viajamos responsablemente</h3>
+              <p>Promovemos grupos pequeños, proveedores responsables y decisiones informadas. Queremos que cada visita genere recuerdos duraderos y una relación respetuosa con las comunidades y los entornos visitados.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="destacados" class="featured-section" aria-labelledby="titulo-destacados">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Experiencias seleccionadas</p>
+          <h2 id="titulo-destacados">Destacados</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+          <article class="col">
+            <div class="card destination-card h-100">
+              <img src="assets/img/card1.jpg" class="card-img-top" alt="Lago turquesa rodeado de montañas en la Patagonia">
+              <div class="card-body d-flex flex-column">
+                <p class="destination-region">Patagonia</p>
+                <h3 class="card-title">Torres del Paine</h3>
+                <p class="card-text">Senderos, lagos y miradores para conocer uno de los parques nacionales más impresionantes del sur de Chile.</p>
+                <button class="btn btn-outline-light mt-auto align-self-start destination-details" type="button" data-destination="Torres del Paine">Ver experiencia</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card destination-card h-100">
+              <img src="assets/img/card2.jpg" class="card-img-top" alt="Lagunas altiplánicas y montañas reflejadas en el agua">
+              <div class="card-body d-flex flex-column">
+                <p class="destination-region">Atacama</p>
+                <h3 class="card-title">Lagunas altiplánicas</h3>
+                <p class="card-text">Una ruta de altura entre salares, volcanes y aguas de colores intensos bajo el cielo más limpio del norte.</p>
+                <button class="btn btn-outline-light mt-auto align-self-start destination-details" type="button" data-destination="Lagunas altiplánicas">Ver experiencia</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card destination-card h-100">
+              <img src="assets/img/card3.jpg" class="card-img-top" alt="Planicie blanca de un salar bajo un cielo abierto">
+              <div class="card-body d-flex flex-column">
+                <p class="destination-region">Norte grande</p>
+                <h3 class="card-title">Salares y volcanes</h3>
+                <p class="card-text">Paisajes amplios, fauna andina y silencio en una travesía que revela la escala del altiplano chileno.</p>
+                <button class="btn btn-outline-light mt-auto align-self-start destination-details" type="button" data-destination="Salares y volcanes">Ver experiencia</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="col">
+            <div class="card destination-card h-100">
+              <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque húmedo y frondoso del sur de Chile">
+              <div class="card-body d-flex flex-column">
+                <p class="destination-region">Selva valdiviana</p>
+                <h3 class="card-title">Bosques del sur</h3>
+                <p class="card-text">Caminatas entre helechos, ríos y árboles centenarios en ecosistemas templados de enorme biodiversidad.</p>
+                <button class="btn btn-outline-light mt-auto align-self-start destination-details" type="button" data-destination="Bosques del sur">Ver experiencia</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Conversemos sobre tu próxima ruta</p>
+          <h2 id="titulo-contacto">Contacto</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8">
+            <form id="contactForm" class="row g-3 needs-validation" novalidate>
+              <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input id="nombre" name="nombre" type="text" class="form-control" autocomplete="name" required>
+                <div class="invalid-feedback">Ingresa tu nombre.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="correo" class="form-label">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" class="form-control" autocomplete="email" required>
+                <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="asunto" class="form-label">Asunto</label>
+                <input id="asunto" name="asunto" type="text" class="form-control" required>
+                <div class="invalid-feedback">Indica el motivo de tu consulta.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" rows="5" required></textarea>
+                <div class="invalid-feedback">Escribe un mensaje antes de enviarlo.</div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-end">
+                <button class="btn btn-info btn-lg" type="submit">
+                  <i class="fa-regular fa-paper-plane me-2" aria-hidden="true"></i>Enviar mensaje
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <a class="footer-brand" href="#inicio">Viajes Chile</a>
+      <p class="mb-0">© 2026 Nicolás Escudero Cabello</p>
+      <nav class="social-links" aria-label="Redes sociales">
+        <a href="https://github.com/NEC-CL" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-bs-toggle="tooltip" title="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-bs-toggle="tooltip" title="LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-bs-toggle="tooltip" title="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-bs-toggle="tooltip" title="Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="messageModalTitle">Mensaje recibido</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-0">Gracias por comunicarte con Viajes Chile. Revisaremos tu consulta para ayudarte a planificar una experiencia inolvidable.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="destinationModalTitle">Destino destacado</h2>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p id="destinationModalText" class="mb-0"></p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-info" href="#contacto" data-bs-dismiss="modal">Consultar disponibilidad</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery 3.7.1 -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
