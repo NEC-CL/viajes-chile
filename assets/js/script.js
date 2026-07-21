@@ -32,14 +32,6 @@
     offset: 90,
   });
 
-  document.querySelectorAll("#navbarMenu .nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      if (navbarMenu.classList.contains("show")) {
-        bootstrap.Collapse.getOrCreateInstance(navbarMenu, { toggle: false }).hide();
-      }
-    });
-  });
-
   $("a[href^='#']").on("click", function (event) {
     const targetId = $(this).attr("href");
 
@@ -54,13 +46,24 @@
     }
 
     event.preventDefault();
-    const destination = Math.max(0, $target.offset().top - navbar.offsetHeight + 1);
 
-    if (reduceMotion.matches) {
-      window.scrollTo(0, destination);
-    } else {
-      $("html, body").stop(true).animate({ scrollTop: destination }, 650);
-    }
+    const scrollToTarget = () => {
+      const destination = Math.max(0, $target.offset().top - navbar.offsetHeight + 1);
+      const closeMenu = () => {
+        if (navbarMenu.classList.contains("show")) {
+          bootstrap.Collapse.getOrCreateInstance(navbarMenu, { toggle: false }).hide();
+        }
+      };
+
+      if (reduceMotion.matches) {
+        window.scrollTo(0, destination);
+        closeMenu();
+      } else {
+        $("html, body").stop(true).animate({ scrollTop: destination }, 650, closeMenu);
+      }
+    };
+
+    scrollToTarget();
   });
 
   const destinationDescriptions = {
